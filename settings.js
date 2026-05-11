@@ -13,10 +13,10 @@ const autostatusAutoviewStatus = process.env.AUTOVIEW_STATUS || 'true';
 const autostatusAutoLikeStatus = process.env.AUTOLIKE_STATUS || 'false';
 const autostatusAutoReplyStatus = process.env.AUTOREPLY_STATUS || 'false';
 const autostatusStatusReplyText = process.env.STATUS_REPLY_TEXT || '✅ Status Viewed By Keith Md';
-const autostatusStatusLikeEmojis = process.env.STATUS_LIKE_EMOJIS || '💛,❤️,💜,🤍,💙';
+const autostatusStatusLikeEmojis = process.env.STATUS_LIKE_EMOJIS || '🫟,🫟';
 
 const botPrefix = process.env.PREFIX || ".";
-const botAuthor = process.env.AUTHOR || "Keith";
+const botAuthor = process.env.OWNER_NAME || "Keith";
 const botexpiration = process.env.BOT_EXPIRATION_DATE || "11/03/2027";
 const botUrl = process.env.BOT_PIC || "https://i.ibb.co/PsZnb9NH/0d81ac6b1fb1.jpg";
 const botGurl = process.env.BOT_GURL || "https://github.com/Keithkeizzah/KEITH-MD";
@@ -25,6 +25,7 @@ const botBotname = process.env.BOTNAME || "KEITH-MD";
 const botPackname = process.env.BOT_PACKNAME || "KEITH-MD";
 const botMode = process.env.BOT_MODE || "public";
 const botSessionName = process.env.BOT_SESSION_NAME || "keith-md";
+const autosocialdownload = process.env.AUTO_SOCIAL_DOWNLOAD || "false";
 
 const { Sequelize } = require('sequelize'); 
 const DATABASE_URL = process.env.DATABASE_URL || './database.db'; 
@@ -56,6 +57,7 @@ module.exports = {
   autostatusStatusLikeEmojis,
   botPrefix,
   botAuthor,
+  autosocialdownload,
   botUrl,
   botGurl,
   botTimezone,
